@@ -160,7 +160,7 @@ export default function Hero() {
             <nav className="dash-sidebar">
               <div className="dash-logo">
                 <div className="dash-logo-icon" />
-                <span>Nexus</span>
+                <span>Dashboard</span>
               </div>
               {[
                 { icon: '◈', label: 'Overview', active: true },
