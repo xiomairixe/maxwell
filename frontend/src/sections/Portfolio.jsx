@@ -80,8 +80,8 @@ export default function Portfolio() {
   return (
     <section className="portfolio" id="portfolio">
       <div className="container">
-        <div className="section-label">PORTFOLIO SHOWCASE</div>
-        <h2 className="section-title">Recent Case Studies</h2>
+        <div className="section-label">PROJECTS SHOWCASE</div>
+        <h2 className="section-title">Projects Delivered</h2>
         <p className="section-sub">
           Explore some of our recent work across different industries and technology stacks.
         </p>
