@@ -43,7 +43,7 @@ export default function Footer() {
               <li>
                 <span className="footer-available">
                   <span className="badge-dot"></span>
-                  Available for new projects worldwide
+                  Available for new projects worldwide.
                 </span>
               </li>
             </ul>
