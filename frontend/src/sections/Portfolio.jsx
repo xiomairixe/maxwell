@@ -11,7 +11,7 @@ const projects = [
     color: '#6C3EF6',
     bg: 'linear-gradient(135deg, #0f0f2a, #1a1a4e)',
     accent: '#22D3EE',
-    images: ['/ViaHale/Login.png', '/ViaHale/End_Users_Landing_Page.png', '/Viahale/Requests.png',],
+    images: ['/ViaHale/Login.png', '/ViaHale/End_Users_Landing_Page.png', '/ViaHale/Requests.png',],
   },
 
   {
@@ -21,7 +21,7 @@ const projects = [
     color: '#22D3EE',
     bg: 'linear-gradient(135deg, #0a1628, #0d2040)',
     accent: '#6C3EF6',
-    images: ['/ViaHale/Admin_Visitors.png', '/ViaHale/Admin_Visitor.png', '/ViaHale/Admin_Visitor_Report.png'],
+    images: ['/ViaHale/visitor.png', '/ViaHale/visitor1.png'],
   },
   {
       tag: 'Business Management',
@@ -39,7 +39,7 @@ const projects = [
     color: '#F59E0B',
     bg: 'linear-gradient(135deg, #1a1000, #2a1a00)',
     accent: '#FCD34D',
-    images: ['/ClockedIn/Main_Interface.png', '/ClockedIn/ESS_Home_Page.png', '/ClockedIn/Attendance.png'],
+    images: ['/ClockedIn/Main_Interface.png', '/ClockedIn/ESS_Home_Page.png', '/ClockedIn/ESS_Attendance_Page.png'],
   },
   {
     tag: 'Document Solution',
