@@ -139,7 +139,7 @@ export default function Portfolio() {
                 <h3>{p.title}</h3>
                 <p>{p.desc}</p>
                 <a href="#contact" className="project-link" style={{ color: p.color }}>
-                  View Case Study <ExternalLink size={14} />
+                  Request for Demo <ExternalLink size={14} />
                 </a>
               </div>
             </div>
