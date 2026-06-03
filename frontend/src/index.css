@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #6C3EF6;
+  --primary-light: #8B5CF6;
+  --accent: #22D3EE;
+  --accent2: #A855F7;
+
+  /* LIGHT THEME */
+  --dark: #ffffff;
+  --dark2: #f8fafc;
+
+  --surface: rgba(255,255,255,0.75);
+  --surface2: rgba(255,255,255,0.9);
+
+  --text: #0F172A;
+  --text-muted: #475569;
+  --text-dim: #64748B;
+
+  --border: rgba(15,23,42,0.08);
+  --glow: rgba(108,62,246,0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+
+  /* MAIN WHITE BACKGROUND */
+  background:
+    radial-gradient(circle at top left,
+      rgba(34,211,238,0.18),
+      transparent 35%),
+
+    radial-gradient(circle at top right,
+      rgba(168,85,247,0.18),
+      transparent 35%),
+
+    radial-gradient(circle at center,
+      rgba(99,102,241,0.08),
+      transparent 45%),
+
+    #ffffff;
+}
+
+/* SOFT OVERLAY GLOW */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 20% 30%,
+      rgba(34,211,238,0.10),
+      transparent 25%),
+
+    radial-gradient(circle at 80% 20%,
+      rgba(168,85,247,0.10),
+      transparent 25%);
+
+  z-index: -1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Sora', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* GLASS NAVBAR / CARDS */
+.glass,
+.navbar,
+.card {
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.05);
+}
+
+/* BUTTON STYLE */
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed,
+    #a855f7
+  );
+
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 30px rgba(124,58,237,0.25);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--glow);
+  }
+
+  50% {
+    box-shadow:
+      0 0 40px var(--glow),
+      0 0 60px rgba(108,62,246,0.12);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(36px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-card {
+  opacity: 0;
+  transform: translateY(36px);
+  visibility: hidden;
+  transition: opacity 0.65s ease, transform 0.65s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  animation: fadeInUp 0.72s ease both;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
