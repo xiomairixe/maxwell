@@ -340,6 +340,31 @@
     0 12px 26px rgba(124,58,237,0.20);
 }
 
+.cta-status {
+  font-size: 13px;
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+.cta-status-success {
+  color: #065f46;
+  background: rgba(16,185,129,0.12);
+  border: 1px solid rgba(16,185,129,0.18);
+}
+
+.cta-status-error {
+  color: #991b1b;
+  background: rgba(239,68,68,0.12);
+  border: 1px solid rgba(239,68,68,0.18);
+}
+
+.cta-status-loading {
+  color: #1d4ed8;
+  background: rgba(59,130,246,0.12);
+  border: 1px solid rgba(59,130,246,0.18);
+}
+
 /* RESPONSIVE */
 @media (max-width: 960px) {
 

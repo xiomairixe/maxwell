@@ -54,9 +54,6 @@ const projects = [
 
 export default function Portfolio() {
   const [carouselIndex, setCarouselIndex] = useState(Array(projects.length).fill(0));
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalProject, setModalProject] = useState(0);
-  const [modalImage, setModalImage] = useState(0);
 
   useScrollReveal();
 
@@ -77,26 +74,6 @@ export default function Portfolio() {
           ? (value + 1) % projects[projectIndex].images.length
           : value
       )
-    );
-  };
-
-  const openModal = (projectIndex, imageIndex) => {
-    setModalProject(projectIndex);
-    setModalImage(imageIndex);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => setModalOpen(false);
-
-  const prevModalImage = () => {
-    setModalImage((current) =>
-      (current - 1 + projects[modalProject].images.length) % projects[modalProject].images.length
-    );
-  };
-
-  const nextModalImage = () => {
-    setModalImage((current) =>
-      (current + 1) % projects[modalProject].images.length
     );
   };
 
@@ -124,7 +101,6 @@ export default function Portfolio() {
                   className="project-image"
                   src={encodeURI(p.images[carouselIndex[i]])}
                   alt={`${p.title} screenshot ${carouselIndex[i] + 1}`}
-                  onClick={() => openModal(i, carouselIndex[i])}
                 />
                 {p.images.length > 1 && (
                   <>
@@ -171,36 +147,6 @@ export default function Portfolio() {
         </div>
       </div>
 
-      {modalOpen && (
-        <div className="portfolio-modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" type="button" onClick={closeModal} aria-label="Close image modal">
-              ×
-            </button>
-            <img
-              className="modal-image"
-              src={encodeURI(projects[modalProject].images[modalImage])}
-              alt={`${projects[modalProject].title} screenshot ${modalImage + 1}`}
-            />
-            <div className="modal-footer">
-              <div className="modal-title">{projects[modalProject].title}</div>
-              <div className="modal-counter">
-                {modalImage + 1}/{projects[modalProject].images.length}
-              </div>
-            </div>
-            {projects[modalProject].images.length > 1 && (
-              <>
-                <button className="modal-nav modal-nav-prev" type="button" onClick={prevModalImage} aria-label="Previous image">
-                  ‹
-                </button>
-                <button className="modal-nav modal-nav-next" type="button" onClick={nextModalImage} aria-label="Next image">
-                  ›
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      )}
     </section>
   );
 }
