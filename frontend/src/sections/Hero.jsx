@@ -129,7 +129,7 @@ export default function Hero() {
 
         <p className="hero-subtitle">
           We are a freelance team specializing in web development, software solutions,<br />
-          UI/UX design, IT support, cybersecurity, and digital innovation.
+          UI/UX design, and digital innovation.
         </p>
 
         <div className="hero-actions">
