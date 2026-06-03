@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Terms of Service — Maxwell Tech</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #0f172a;
+        background: #f8fafc;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.14), transparent 28%),
+                    radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.12), transparent 24%),
+                    #f8fafc;
+      }
+      a {
+        color: #4338ca;
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
+      .page-shell {
+        width: min(1150px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 40px 0 64px;
+      }
+      .page-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 32px;
+      }
+      .page-header h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 3vw, 3.4rem);
+        line-height: 1.02;
+      }
+      .page-header p {
+        margin: 12px 0 0;
+        color: #475569;
+        font-size: 1rem;
+        max-width: 620px;
+      }
+      .page-meta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(16, 185, 129, 0.18);
+        font-size: 0.95rem;
+        color: #1f2937;
+        box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+      }
+      .page-card {
+        background: #ffffff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 30px;
+        box-shadow: 0 40px 90px rgba(15, 23, 42, 0.08);
+        padding: 42px;
+      }
+      .page-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        margin-bottom: 32px;
+        padding: 14px 20px;
+        border-radius: 999px;
+        border: 1px solid rgba(16, 185, 129, 0.18);
+        background: rgba(255, 255, 255, 0.92);
+        color: #059669;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .page-back:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 18px 40px rgba(16, 185, 129, 0.14);
+      }
+      h2 {
+        margin-top: 40px;
+        margin-bottom: 14px;
+        font-size: 1.2rem;
+        color: #111827;
+      }
+      p {
+        margin: 0 0 22px;
+        color: #334155;
+        line-height: 1.85;
+        font-size: 1rem;
+      }
+      ul {
+        margin: 0 0 22px 1.4rem;
+        padding: 0;
+        color: #334155;
+        line-height: 1.8;
+      }
+      li { margin-bottom: 10px; }
+      .section-note {
+        display: block;
+        margin: 32px 0 0;
+        padding: 18px 22px;
+        border-left: 4px solid #10b981;
+        background: #ecfdf5;
+        border-radius: 16px;
+        color: #334155;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <a class="page-back" href="javascript:history.back()">← Go back</a>
+      <div class="page-header">
+        <div>
+          <h1>Terms of Service</h1>
+          <p>These terms explain how you may use Maxwell Tech’s website and the responsibilities that apply when you interact with our services.</p>
+        </div>
+        <span class="page-meta">Last updated: June 3, 2026</span>
+      </div>
+      <div class="page-card">
+        <p>Welcome to Maxwell Tech. These Terms of Service ("Terms") govern your use of our website and services. By using the site you agree to these Terms.</p>
+        <h2>Use of the Website</h2>
+        <p>You agree to use the website for lawful purposes only and not to interfere with or disrupt the site or our services. You are responsible for any content you submit.</p>
+        <h2>Intellectual Property</h2>
+        <p>All content on this site, including text, graphics, logos, and images, is owned by Maxwell Tech or its licensors and is protected by applicable intellectual property laws.</p>
+        <h2>Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Maxwell Tech will not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of the site.</p>
+        <h2>Changes</h2>
+        <p>We may modify these Terms at any time. Continued use of the site after changes indicates your acceptance of the updated Terms.</p>
+        <h2>Contact</h2>
+        <p>Questions about these Terms: <a href="mailto:maxwelltechconnect@gmail.com">maxwelltechconnect@gmail.com</a></p>
+        <span class="section-note">These Terms constitute the entire agreement between you and Maxwell Tech regarding your use of the site.</span>
+      </div>
+    </div>
+    <script>
+      if (!document.referrer) {
+        document.querySelector('.page-back').href = '/';
+      }
+    </script>
+  </body>
+</html>

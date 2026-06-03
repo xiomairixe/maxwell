@@ -36,8 +36,8 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="mailto:hello@maxwelltech.com">
-                  <Mail size={14} /> hello@maxwelltech.com
+                <a href="mailto:maxwelltechconnect@gmail.com">
+                  <Mail size={14} />maxwelltechconnect@gmail.com
                 </a>
               </li>
               <li>
@@ -53,8 +53,8 @@ export default function Footer() {
         <div className="footer-bottom">
           <span>© {year}  Maxwell Tech. All rights reserved.</span>
           <div className="footer-legal">
-            <a href="#top">Privacy Policy</a>
-            <a href="#top">Terms of Service</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="/terms-of-service.html">Terms of Service</a>
           </div>
         </div>
       </div>

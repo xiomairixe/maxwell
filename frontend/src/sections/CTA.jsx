@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   Mail,
   Phone,
-  Globe,
+  // Globe,
   ExternalLink,
   LinkIcon,
   Send
@@ -26,21 +26,21 @@ export default function CTA() {
   const contacts = [
     {
       Icon: Mail,
-      value: 'hello@maxwelltech.com',
+      value: 'maxwelltechconnect@gmail.com',
       label: 'EMAIL'
     },
 
     {
       Icon: Phone,
-      value: '+63 912 345 6789',
+      value: '+63 916 706 0932',
       label: 'PHONE'
     },
 
-    {
-      Icon: Globe,
-      value: 'maxwelltech.com',
-      label: 'PORTFOLIO'
-    },
+    // {
+    //   Icon: Globe,
+    //   value: 'maxwell-tech.com',
+    //   label: 'PORTFOLIO'
+    // },
 
     {
       Icon: ExternalLink,

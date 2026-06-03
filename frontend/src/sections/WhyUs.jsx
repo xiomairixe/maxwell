@@ -7,7 +7,7 @@ const reasons = [
   {
     icon: <Users size={22} />,
     title: 'Experienced Professionals',
-    desc: 'A dedicated team of senior developers, designers, and strategists.',
+    desc: 'A dedicated team of developers, designers, and strategists.',
   },
   {
     icon: <MessageCircle size={22} />,
