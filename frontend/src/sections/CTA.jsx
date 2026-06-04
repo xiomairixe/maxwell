@@ -146,7 +146,7 @@ export default function CTA() {
                   <label>Your Name</label>
                   <input
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Maxwell Tech"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
@@ -157,7 +157,7 @@ export default function CTA() {
                   <label>Email Address</label>
                   <input
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="maxwell@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
