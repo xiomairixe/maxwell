@@ -11,7 +11,7 @@ import WhyUs from './sections/WhyUs';
 // import Process from './sections/Process';
 import Portfolio from './sections/Portfolio';
 // import Team from './sections/Team';
-import Testimonials from './sections/Testimonials';
+// import Testimonials from './sections/Testimonials';
 import CTA from './sections/CTA';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       {/* <Process /> */}
       <Portfolio />
       {/* <Team /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTA />
       <Footer />
     </div>
