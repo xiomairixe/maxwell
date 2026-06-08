@@ -20,7 +20,11 @@
 
   padding: 0 24px;
 }
-
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 /* FLOATING PANEL */
 .nav-panel {
 
@@ -80,22 +84,9 @@
 
   border-radius: 12px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #2563EB,
-      #7C3AED,
-      #9333EA
-    );
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color: white;
-
-  box-shadow:
-    0 10px 24px rgba(124,58,237,0.25);
 }
 
 /* NAV LINKS */

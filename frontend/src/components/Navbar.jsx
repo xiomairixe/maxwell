@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import './Navbar.css'
 
 export default function Navbar() {
@@ -35,9 +35,9 @@ export default function Navbar() {
           {/* LOGO */}
           <a href="#home" className="nav-logo">
 
-            <div className="logo-icon">
-              <Zap size={18} />
-            </div>
+          <div className="logo-icon">
+            <img src="/logo.png" alt="Maxwell Tech Logo" />
+          </div>
 
             <span>Maxwell Tech.</span>
 
