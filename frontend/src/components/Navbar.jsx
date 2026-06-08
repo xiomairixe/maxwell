@@ -8,78 +8,37 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
-
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
     }
-
     window.addEventListener('scroll', handleScroll)
-
     return () => window.removeEventListener('scroll', handleScroll)
-
   }, [])
 
-  const links = [
-    'Services',
-    'Projects',
-  ]
-
   return (
-
-    <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-
+    <header className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="navbar-container">
-
         <div className="nav-panel">
 
-          {/* LOGO */}
           <a href="#home" className="nav-logo">
-
-          <div className="logo-icon">
-            <img src="/logo.png" alt="Maxwell Tech Logo" />
-          </div>
-
+            <div className="logo-icon">
+              <img src="/logo.png" alt="Maxwell Tech Logo" />
+            </div>
             <span>Maxwell Tech.</span>
-
           </a>
 
-          {/* DESKTOP NAV */}
-          <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-
-            {links.map(link => (
-
-              <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link}
-              </a>
-
-            ))}
-
-            <a
-              href="#contact"
-              className="nav-cta"
-              onClick={() => setMenuOpen(false)}
-            >
-              Start a Project
-            </a>
-
+          <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
+            <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+            <a href="#portfolio" onClick={() => setMenuOpen(false)}>Projects</a>
+            <a href="#contact" className="nav-cta" onClick={() => setMenuOpen(false)}>Start a Project</a>
           </nav>
 
-          {/* MOBILE BUTTON */}
-          <button
-            className="hamburger"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
+          <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
 
         </div>
-
       </div>
-
     </header>
   )
 }
